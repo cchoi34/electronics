@@ -14,7 +14,6 @@ jobs:
         npm install
         npm run build --if-present
     - uses: azure/appservice-actions/webapp@master
-    - name: Deploy to app service
       with:
         app-name: electronics-cchoi34
         publish-profile: ${{ secrets.publishProfile }}
